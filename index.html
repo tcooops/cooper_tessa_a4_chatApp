@@ -4,26 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikiText</title>
+    <title>TikiText - Home</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/qgg1alq.css">
 </head>
 <body>
+    <h1 class="hidden">TikiText Chat App Home</h1>
     <main>
         <div class="main-container">
-            <h1 class="hidden">Welcome to TikiTalk</h1>
-            <h4>Create a username to join the chat</h4>
-            <div class="login-container">
-                <form action="">
-                    <input type="text" placeholder="username" id="username">
-                    <input type="password" placeholder="password" id="password">
-                    <input type="submit" value="join" id="login">
-                </form>
-            </div>
-
-<!-- temp hack to bypass login-->
-        <a href="/chat">See what others are saying</a>
-    </div>
+            <h1 class="hidden">Welcome to TikiText</h1>
+            <header>
+                <h2 class="hidden">Main Nav</h2>
+                <div class="logo-wrapper">
+                     <img src="images/tiki_logo_1.svg" alt="logo" class="main-logo">
+                </div>
+            </header>
+            <section>
+                <h4>Create a username to join the chat!</h4>
+                <div class="login-container">
+                    <form action="">
+                        <input type="text" placeholder="username" id="username">
+                        <input type="password" placeholder="password" id="password">
+                        <input type="submit" value="join" id="login">
+                    </form>
+                </div>
+                <!-- temp hack to bypass login-->
+                <div id="anon"><a href="/chat">See what others are saying</a></div>
+            </section>
+        </div> <!-- close main container-->
     </main>
 </body>
 </html>
