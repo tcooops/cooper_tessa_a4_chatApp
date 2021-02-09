@@ -20,3 +20,5 @@ app.get("/chat", (req, res) => {
 const server = app.listen(port, () => {
     console.log(`app is running on ${port}`);
 });
+
+messenger.attach(server); // making sure socket uses the same port by attaching it
