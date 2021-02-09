@@ -22,3 +22,10 @@ const server = app.listen(port, () => {
 });
 
 messenger.attach(server); // making sure socket uses the same port by attaching it
+messenger.on('connection', (socket) => {
+    console.log(`a user has connected: ${socket.id}`);
+    
+    socket.on('disconnect', () => {
+        console.log('a user has disconnected');
+    })
+});

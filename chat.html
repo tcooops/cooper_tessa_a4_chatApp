@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TikiText</title>
+    <title>TikiText - Chats</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/qgg1alq.css">
 </head>
 <body>
+    <h1 class="hidden">TikiText Chat App Chats</h1>
     <main id="app">
+        <h2 class="hidden">Chats</h2>
         <div class="main-container">
-            <h2>TikiText</h2>
+           <header>
+               <h2 class="hidden">Main Nav</h2>
+               <div class="logo-wrapper">
+               <a href="/"><img src="images/tiki_logo_2.svg" alt="home" class="main-logo"></a>
+               </div>
+           </header>
+
+                   <!-- vue custom component goes here -->
+
+                   
             <section class="message-wrapper">
-                    <textarea class="text-message" name="message" id="msg-body" cols="30" rows="10" placeholder="whatchu sayin' boo"></textarea>
-                    <input type="submit" value="send">
+                <h2 class="hidden">send message</h2>
+                    <textarea class="text-message" name="message" id="msg-body" cols="60" rows="2" placeholder=""></textarea>
+                    <input type="submit" value="send" id="send-chat">
             </section>
         </div>
     </main>
+    <script src="/socket.io/socket.io.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="public/scripts/main.js"></script>
+    <script defer src="scripts/main.js"></script>
+    
 </body>
 </html>

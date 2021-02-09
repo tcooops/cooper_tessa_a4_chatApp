@@ -1,6 +1,10 @@
+.hidden {
+    display: none;
+}
+
 body{
-    background-color: $tikigreen;
-    color: $tikidarkblue;
+    background-color: $tikibone;
+    color: $tikipurple;
 }
 
 h1, h2 {
@@ -17,8 +21,10 @@ h4, p {
     font-size: 1.5em;
 }
 
-a { text-decoration: none;
-    color: $tikidarkgreen;}
+a { 
+    text-decoration: none;
+    color: $tikiaqua;
+}
 
 .main-container {
     font-family: $body;
@@ -27,28 +33,81 @@ a { text-decoration: none;
     margin: 0 auto;
 }
 
+.main-logo {
+    max-height: 116px!important;
+    height:100%;
+    padding-top: 1em;
+}
+
+
+//index
 .login-container {
-    color: $tikiblack;
     margin: 0 auto;
     form {    
         display: flex;
         flex-direction: column !important;
         justify-content: space-around;
         #login {
+            background-color: $tikiaqua;
+            color: $tikibone;
             width: 75px;
             height: 30px;
             margin: 10px;
+            border-radius: 8px        ;
+            -webkit-border-radius: 8px        ;
+            -moz-border-radius: 8px        ;
+            -ms-border-radius: 8px        ;
+            -o-border-radius: 8px        ;
+        }
+        #login:hover {
+            background-color: $tikipink;
+            color: $tikibone;
         }
         #username {
             max-width: 200px;
             padding: 10px;
             margin: 10px;
+            border-radius: 8px        ;
+            -webkit-border-radius:8px;
+            -moz-border-radius:8px;
+            -ms-border-radius:8px;
+            -o-border-radius:8px;
         }
         #password {
             max-width: 200px;
             padding: 10px;
             margin: 10px;
+            border-radius: 8px        ;
+            -webkit-border-radius:8px;
+            -moz-border-radius:8px;
+            -ms-border-radius:8px;
+            -o-border-radius:8px;
         }
     }
 }
 
+// chat page
+.message-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    #send-chat {
+        font-size:1.2em;
+        background-color: $tikipurple;
+        color: $tikibone;
+        height: 40px;
+        width: 30%;
+        margin: 0 auto;
+        margin-top:10px;
+        border-radius: 4px    ;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+    }
+    #send-chat:hover{
+        background-color: $tikigreen;
+        color: $tikiblack;
+    }
+
+}
