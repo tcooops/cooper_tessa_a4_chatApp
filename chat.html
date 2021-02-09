@@ -13,26 +13,30 @@
     <main id="app">
         <h2 class="hidden">Chats</h2>
         <div class="main-container">
-           <header>
-               <h2 class="hidden">Main Nav</h2>
-               <div class="logo-wrapper">
-               <a href="/"><img src="images/tiki_logo_2.svg" alt="home" class="main-logo"></a>
-               </div>
-           </header>
+            <header>
+                <h2 class="hidden">Main Nav</h2>
+                <div class="logo-wrapper">
+                <a href="/"><img src="images/tiki_logo_2.svg" alt="home" class="main-logo"></a>
+                </div>
+            </header>
 
                    <!-- vue custom component goes here -->
-
+            <section class="messages">
+                <ul id="messages" v-for="message in messages">
+                    <newmessage :msg="message"></newmessage>
+                </ul>
+            </section>
                    
             <section class="message-wrapper">
                 <h2 class="hidden">send message</h2>
-                    <textarea class="text-message" name="message" id="msg-body" cols="60" rows="2" placeholder=""></textarea>
-                    <input type="submit" value="send" id="send-chat">
+                    <textarea v-model="message" class="text-message" name="message" id="msg-body" cols="45" rows="3" placeholder=""></textarea>
+                    <input @click.prevent="dipatchMessage" type="submit" value="send" id="send-chat">
             </section>
-        </div>
+        </div> <!-- close main-container -->
     </main>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script defer src="scripts/main.js"></script>
+    <script defer type="module" src="scripts/main.js"></script>
     
 </body>
 </html>

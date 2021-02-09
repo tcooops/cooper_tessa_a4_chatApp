@@ -18,13 +18,11 @@ h4, p {
     font-family: $body;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.15em;
+    padding: 10px;
 }
 
-a { 
-    text-decoration: none;
-    color: $tikiaqua;
-}
+
 
 .main-container {
     font-family: $body;
@@ -86,11 +84,28 @@ a {
     }
 }
 
+#anon {
+    padding-left: 10px;
+    padding-top: 10px;
+    a { 
+        text-decoration: none;
+        color: $tikipurple;
+    }
+    a:hover {
+        font-style: italic;
+        color: $tikigreen;
+    }
+}
+
 // chat page
 .message-wrapper {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
+    .text-message {
+        max-width: 800px;
+        width: 100%;
+    }
     #send-chat {
         font-size:1.2em;
         background-color: $tikipurple;
@@ -109,5 +124,4 @@ a {
         background-color: $tikigreen;
         color: $tikiblack;
     }
-
 }
