@@ -1,0 +1,54 @@
+body{
+    background-color: $tikigreen;
+    color: $tikidarkblue;
+}
+
+h1, h2 {
+    font-family: $header;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+h4, p {
+    font-family: $body;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+}
+
+a { text-decoration: none;
+    color: $tikidarkgreen;}
+
+.main-container {
+    font-family: $body;
+    width: 90%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.login-container {
+    color: $tikiblack;
+    margin: 0 auto;
+    form {    
+        display: flex;
+        flex-direction: column !important;
+        justify-content: space-around;
+        #login {
+            width: 75px;
+            height: 30px;
+            margin: 10px;
+        }
+        #username {
+            max-width: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #password {
+            max-width: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+    }
+}
+

@@ -1,0 +1,17 @@
+{
+  "name": "tbcchatapp",
+  "version": "1.0.0",
+  "description": "My first chat app for MMED-5006 - Authoring 4",
+  "main": "index.js",
+  "scripts": {
+    "start-dev": "nodemon app & browser-sync start --proxy 'localhost:5000' --files 'index.html' 'public'",
+    "start": "node app"
+  },
+  "keywords": [],
+  "author": "tessa benton-cooper",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
