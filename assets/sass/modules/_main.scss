@@ -98,13 +98,23 @@ h4, p {
 }
 
 // chat page
+
+.chat-con {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 2.5em;
+}
+
 .message-wrapper {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
     .text-message {
-        max-width: 800px;
+        max-width: 600px;
         width: 100%;
+        font-family: $body;
     }
     #send-chat {
         font-size:1.2em;
