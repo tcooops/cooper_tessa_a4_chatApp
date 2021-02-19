@@ -6,22 +6,54 @@
     font-size: 16px;
 }
 
-.new-message {
+h5 {
+    font-size: 1.2em;;
+}
+
+textarea {
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
     padding: 1em;
-    background-color: $tikigreen;
-    color: $white;
-    border-radius: 1em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    -ms-border-radius: 1em;
-    -o-border-radius: 1em;
+}
+
+.new-message {
+    animation-name: newMessage;
+    padding: 1.5em;
+    color: $tikiorange;
     float: left;
     clear: both;
     margin: 1em;
+    p{
+        background-color: $tikiorange;
+        color: $tikibone;
+        border-radius: 1em;
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        -ms-border-radius: 1em;
+        -o-border-radius: 1em;
+    }
 }
 
 .my-message {
-    background-color: $tikipurple;
-    color: $white;
+    animation-name: newMessage;
+    color: $tikiblue;
     float: right;
+    p {
+        background-color: $tikiblue;
+        color: $tikibone;
+        border-radius: 1.5em;
+        -webkit-border-radius: 1.5em;
+        -moz-border-radius: 1.5em;
+        -ms-border-radius: 1.5em;
+        -o-border-radius: 1.5em;
+}
+}
+
+@keyframes newMessage {
+    from { transform: matrix(1, 0, 0, 1, 0, 400) }
+    35% { transform: matrix(1, 0, 0, 1, 0, -50) }
+    43% { transform: matrix(1, 0, 0, 1, 0, 0) }
 }

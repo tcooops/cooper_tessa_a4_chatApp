@@ -1,6 +1,9 @@
+// sass --watch assets/sass:public/css --style compressed 
+
 @import "modules/_vars.scss";
 
 @import "modules/_defaults.scss";
 @import "modules/_header.scss";
 @import "modules/_main.scss";
+@import "modules/_animations.scss";
 @import "modules/_footer.scss";
