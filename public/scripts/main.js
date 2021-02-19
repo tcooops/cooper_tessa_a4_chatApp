@@ -1,5 +1,7 @@
 import ChatMessage from "./components/TheMessageComponent.js"
 
+
+
 (() => {
     console.log('fired');
 
@@ -9,10 +11,12 @@ import ChatMessage from "./components/TheMessageComponent.js"
     // messenger service event handling -> incoming from the manager
     function setUserId({sID, message}) {
         // incoming connected event with data
+        //debugger;
         vm.socketID = sID;
     }
 
     function appendMessage(message) {
+        //debugger;
         vm.messages.push(message);
     }
 
@@ -26,12 +30,15 @@ import ChatMessage from "./components/TheMessageComponent.js"
         },
 
         created: function() {
-            console.log('itS ALIVE! vue here, sup!');
+            console.log('whats up');
         },
         
         methods: { 
             dispatchMessage() {
-                socket.emit('chatmessage', { content: this.message, name: this.nickname || "Anonymous" })
+                //debugger;
+                socket.emit('chatmessage', { content: this.message, name: this.nickname || "Anonymous:" });
+                
+                this.message = "";
             }
         },
 

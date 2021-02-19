@@ -5,3 +5,23 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+
+.new-message {
+    padding: 1em;
+    background-color: $tikigreen;
+    color: $white;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    float: left;
+    clear: both;
+    margin: 1em;
+}
+
+.my-message {
+    background-color: $tikipurple;
+    color: $white;
+    float: right;
+}
