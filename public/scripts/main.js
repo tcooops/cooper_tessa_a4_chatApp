@@ -1,7 +1,5 @@
 import ChatMessage from "./components/TheMessageComponent.js"
 
-
-
 (() => {
     console.log('fired');
 
@@ -13,7 +11,7 @@ import ChatMessage from "./components/TheMessageComponent.js"
         // incoming connected event with data
         //debugger;
         vm.socketID = sID;
-    }
+    } 
 
     function appendMessage(message) {
         //debugger;
@@ -30,8 +28,11 @@ import ChatMessage from "./components/TheMessageComponent.js"
         },
 
         created: function() {
-            console.log('whats up');
+            socket.emit('newconnection', {
+                name: this.nickname
+            })
         },
+
         
         methods: { 
             dispatchMessage() {
