@@ -8,26 +8,29 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/qgg1alq.css">
 </head>
-<body>
+<body id="chat">
     <h1 class="hidden">TikiText Chat App Chats</h1>
-    <main id="app">
+    <main>
         <h2 class="hidden">Chats</h2>
         <div class="main-container">
             <header>
                 <h2 class="hidden">Main Nav</h2>
-                <div class="logo-wrapper">
-                <a href="/"><img src="images/tiki_logo_2.svg" alt="home" class="main-logo"></a>
-                </div>
+                    <div class="logo-wrapper">
+                        <a href="/"><img src="images/tiki_logo_1.svg" alt="home" class="main-logo"></a>
+                    </div>
             </header>
-
                    <!-- vue custom component goes here -->
-            <section class="chat-con">
+
+            <section class="greeting">
+                <h2>Hello there!</h2>
+                <h3>Join in on the chat below!</h3>
+            </section>
+            <section class="chat-con" id="app">
                 <div class="messages">
                     <ul id="messages" v-for="message in messages">
                         <newmessage :msg="message" :socketid="socketID"></newmessage>
                     </ul>
                 </div>
-                    
                 <div class="message-wrapper">
                     <h2 class="hidden">send message</h2>
                         <textarea v-model="message" class="text-message" name="message" id="msg-body" cols="45" rows="1" placeholder="Write your message here..."></textarea>

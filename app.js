@@ -29,7 +29,13 @@ messenger.on('connection', (socket) => {
 
     // send the connected user their assigned ID
     socket.emit('connected', {sID: `${socket.id}`, message: 'new connection'});
-    socket.broadcast.emit('A new user has connected');
+
+    // broadcast a new user to all in chat
+    socket.on('newconnection', () => {
+
+                                                                                            
+        socket.broadcast.emit('A new user has connected');
+    })
 
     socket.on('chatmessage', function(msg) {
         console.log(msg);
@@ -40,4 +46,4 @@ messenger.on('connection', (socket) => {
     socket.on('disconnect', () => {
         console.log('a user has disconnected');
     })
-}); 
+});

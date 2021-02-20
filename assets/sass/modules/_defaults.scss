@@ -6,10 +6,6 @@
     font-size: 16px;
 }
 
-h5 {
-    font-size: 1.2em;;
-}
-
 textarea {
     border-radius: 2em;
     -webkit-border-radius: 2em;
@@ -21,11 +17,10 @@ textarea {
 
 .new-message {
     animation-name: newMessage;
-    padding: 1.5em;
     color: $tikiorange;
     float: left;
     clear: both;
-    margin: 1em;
+    margin: 0.2em;
     p{
         background-color: $tikiorange;
         color: $tikibone;
