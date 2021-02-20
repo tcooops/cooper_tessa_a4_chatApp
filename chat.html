@@ -34,9 +34,8 @@
                 <div class="message-wrapper">
                     <h2 class="hidden">send message</h2>
                         <textarea v-model="message" class="text-message" name="message" id="msg-body" cols="45" rows="1" placeholder="Write your message here..."></textarea>
-                        <input id="send-chat" @click.prevent="dispatchMessage" type="submit" value="send">
+                        <button id="send-chat" @click.prevent="dispatchMessage" type="submit" value="send">send chat</button>
                 </div>
-
             </section>
         </div> <!-- close main-container -->
     </main>
