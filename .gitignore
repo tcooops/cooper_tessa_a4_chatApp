@@ -1,2 +1,4 @@
 “node_modules”
-/assets
+"assets"
+".sass-cache"
+".vscode"
