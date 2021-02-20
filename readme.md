@@ -10,7 +10,7 @@
 * `CD` to the location of your choice, then `git clone` the project
 * Make sure to run `npm install` to install all depencdencies
 * From there, run `npm run start-dev` to launch the app on localhost 5000
-* OR visit the live version on [Heroku] [https://tiki-text.herokuapp.com/]
+* OR visit the live version on [Heroku](https://tiki-text.herokuapp.com/)
 
 ## Built With
 * HTML
